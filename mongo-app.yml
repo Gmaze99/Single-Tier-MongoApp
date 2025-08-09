@@ -36,6 +36,6 @@ spec:
                 key: mongo-password
       volumes:
        - name: mongo-volume
-         hostPath:
-          path: /vol
+         persistentVolumeClaim:
+           claimName: mongo-pvc
 
